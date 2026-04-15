@@ -1,0 +1,325 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Times New Roman", serif;
+  background: #f6f2ee;
+  color: #2b2b2b;
+  line-height: 1.8;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ===== HEADER / NAVBAR ===== */
+header {
+  background: #2f2a26;
+  padding: 16px 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #f4b183;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url("images/old1.jpg") center/cover no-repeat;
+  height: 90vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
+  color: #f4e6d8;
+  margin-bottom: 18px;
+}
+
+.hero-text {
+  max-width: 750px;
+  font-size: 19px;
+}
+
+/* ===== HERO BUTTONS ===== */
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.hero-buttons button {
+  background: #f4b183;
+  border: none;
+  padding: 14px 30px;
+  margin: 8px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-buttons button:hover {
+  background: #e39b63;
+}
+
+/* ===== SECTIONS COMMON ===== */
+section {
+  padding: 70px 60px;
+}
+
+.section-light {
+  background: #ffffff;
+}
+
+.section-dark {
+  background: #f1ebe5;
+}
+
+section h2 {
+  font-size: 38px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.section-subtitle,
+.tagline {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  color: #6b5f54;
+  margin-bottom: 45px;
+}
+
+/* ===== ABOUT US ===== */
+.split {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.split img {
+  width: 420px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.split p {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* ===== CARDS (SERVICES / ACTIVITIES / EVENTS) ===== */
+.cards {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.card {
+  width: 32%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 17px;
+}
+
+/* ===== IMPACT BOXES ===== */
+.impact {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.impact div {
+  background: #ffffff;
+  padding: 32px;
+  width: 22%;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+.impact h3 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #f4b183;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-box {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-info {
+  width: 40%;
+  font-size: 18px;
+}
+
+.contact-form {
+  width: 60%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: "Times New Roman", serif;
+  font-size: 17px;
+}
+
+.contact-form button {
+  background: #f4b183;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #e39b63;
+}
+
+/* ===== SUPPORT / DONATION ===== */
+.support-box {
+  background: #ffffff;
+  padding: 45px;
+  max-width: 520px;
+  margin: auto;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.support-box input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.support-box button {
+  background: #f4b183;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #2f2a26;
+  color: #ffffff;
+  text-align: center;
+  padding: 22px;
+  margin-top: 40px;
+  font-size: 17px;
+}
+/* ===== COMMON BIG ORANGE BUTTON STYLE ===== */
+button {
+  background-color: #f4b183;
+  color: #000000;
+  font-family: "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 14px 34px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e39b63;
+  transform: translateY(-2px);
+}
+
+/* ===== ACTIVITIES : JOIN NOW BUTTON ===== */
+.card button {
+  margin-top: 15px;
+  width: 70%;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ===== SUPPORT / DONATION BUTTONS ===== */
+.support-box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.support-box button {
+  width: 100%;
+  max-width: 320px;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 16px 0;
+}
+
+/* ===== DONATE NOW (HIGHLIGHT) ===== */
+.support-box .donate-big {
+  background-color: #e39b63;
+  font-size: 22px;
+  font-weight: 900;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heaven Old Age Care Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="logo">Heaven Old Age Care Centre</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#activities">Activities</a>
+    <a href="#contact">Contact</a>
+    <a href="#support" class="donate">Support</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <h1>Heaven Old Age Care Centre</h1>
+  <h3 class="subtitle">
+    “Evening years deserve the warmest sunsets of care and love.”
+  </h3>
+  <p class="hero-text">
+    A peaceful home where senior citizens are respected, supported, and
+    surrounded by compassion, dignity, and emotional warmth.
+  </p>
+  <div class="hero-buttons">
+    <button onclick="scrollToSection('contact')">Contact Us</button>
+    <button onclick="scrollToSection('support')">Support Our Cause</button>
+  </div>
+</section>
+
+<!-- ABOUT US -->
+<section id="about" class="section light">
+  <h2>About Us</h2>
+  <div class="split">
+    <img src="images/old7.jpg" alt="Old Age Care">
+    <div>
+      <p>
+        Heaven Old Age Care Centre, located in Bhandup West, Mumbai, is a
+        dedicated community service initiative focused on the care and
+        well-being of senior citizens.
+      </p>
+      <p>
+        We provide a calm, secure, and family-like environment where elderly
+        people can live with dignity. Our team ensures emotional support,
+        companionship, and respect for every individual.
+      </p>
+      <p>
+        Our goal is not just care, but to create a meaningful life filled with
+        joy, belonging, and peace during the golden years.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <p class="section-subtitle">Comprehensive care designed for comfort and dignity</p>
+
+  <div class="cards">
+    <div class="card">
+      <img src="images/old1.jpg" alt="Old Age Care">
+      <h3>Medical Care</h3>
+      <p>
+        Regular health check-ups, medication support, emergency assistance,
+        and monitoring to ensure physical safety and wellness.
+      </p>
+      <p>
+        Experienced doctors and caregivers are always available for support.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="images/old2.jpg" alt="Old Age Care">
+      <h3>Daily Assistance</h3>
+      <p>
+        Help with daily activities such as bathing, walking, meals, and
+        personal hygiene with patience and compassion.
+      </p>
+      <p>
+        Ensuring comfort while promoting independence wherever possible.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="images/old3.jpg" alt="Old Age Care">
+      <h3>Emotional Support</h3>
+      <p>
+        Counseling, companionship, group discussions, and emotional care to
+        reduce loneliness and stress.
+      </p>
+      <p>
+        Creating a loving environment that feels like home.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities" class="section light">
+  <h2>Our Activities</h2>
+  <p class="section-subtitle">Keeping minds active and hearts happy</p>
+
+  <div class="cards">
+    <div class="card">
+      <img src="images/old4.jpg" alt="Old Age Care">
+      <h3>Yoga & Meditation</h3>
+      <p>
+        Daily yoga and meditation sessions improve flexibility, peace of mind,
+        and emotional balance.
+      </p>
+      <button>Join Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/old5.jpg" alt="Old Age Care">
+      <h3>Recreation & Games</h3>
+      <p>
+        Indoor games, music, celebrations, and social events to encourage joy
+        and bonding.
+      </p>
+      <button>Join Now</button>
+    </div>
+
+    <div class="card">
+      <img src="images/old6.jpg" alt="Old Age Care">
+      <h3>Health Programs</h3>
+      <p>
+        Health camps, awareness programs, and wellness sessions for a healthy
+        lifestyle.
+      </p>
+      <button>Join Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <div class="split">
+    <div>
+      <p><b>Address:</b> Bhandup West, Mumbai</p>
+      <p><b>Phone:</b> +91 9876543210</p>
+      <p><b>Email:</b> namithathevar@23gmail.com</p>
+    </div>
+
+    <form class="contact-form" onsubmit="return sendMessage()">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- SUPPORT -->
+<section id="support" class="section light">
+  <h2>Support Our Cause</h2>
+  <p class="section-subtitle">
+    Your kindness helps us care for those who once cared for us
+  </p>
+
+  <div class="donation-box">
+    <button>₹500</button>
+    <button>₹1000</button>
+    <button>₹2000</button>
+    <button class="donate-big">Donate Now</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Heaven Old Age Care Centre | Community Service Project</p>
+</footer>
+
+<script>
+function scrollToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+function sendMessage() {
+  alert("Thank you for contacting us!");
+  return false;
+}
+</script>
+
+</body>
+</html>
